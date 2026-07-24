@@ -1,0 +1,57 @@
+name: Sync Novel to Database
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'main/**/*.md'
+
+permissions:
+  contents: read
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout novel repository
+        uses: actions/checkout@v4
+        with:
+          path: novel
+          fetch-depth: 0
+
+      - name: Checkout platform repository
+        uses: actions/checkout@v4
+        with:
+          repository: RollieGarcia0031/psychic-petals-platform
+          path: platform
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Install backend dependencies
+        working-directory: platform/backend
+        run: npm ci
+
+      - name: Find changed chapter files
+        id: changed
+        working-directory: novel
+        env:
+          BEFORE: ${{ github.event.before }}
+          SHA: ${{ github.sha }}
+        run: |
+          if [ "$BEFORE" = '0000000000000000000000000000000000000000' ] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            CHANGED=$(git ls-files -- 'main/**/*.md')
+          else
+            CHANGED=$(git diff --name-only "$BEFORE" "$SHA" -- 'main/**/*.md')
+          fi
+          CHANGED=$(printf '%s' "$CHANGED" | paste -sd, -)
+          echo "files=$CHANGED" >> "$GITHUB_OUTPUT"
+
+      - name: Sync changed chapters to Firestore
+        working-directory: platform/backend
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          CHANGED_FILES: ${{ steps.changed.outputs.files }}
+        run: node scripts/sync-novel.js --novel-dir ../../novel --changed "$CHANGED_FILES"
