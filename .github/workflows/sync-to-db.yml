@@ -46,7 +46,9 @@ jobs:
           if [ "$BEFORE" = '0000000000000000000000000000000000000000' ] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
             CHANGED=$(git ls-files -- 'main/**/*.md')
           else
-            CHANGED=$(git diff --name-only "$BEFORE" "$SHA" -- 'main/**/*.md')
+            # Deleted paths cannot be read by the sync script. Renames are
+            # included as additions, so their destination path is synced.
+            CHANGED=$(git diff --diff-filter=ACMR --name-only "$BEFORE" "$SHA" -- 'main/**/*.md')
           fi
           CHANGED=$(printf '%s' "$CHANGED" | paste -sd, -)
           echo "files=$CHANGED" >> "$GITHUB_OUTPUT"

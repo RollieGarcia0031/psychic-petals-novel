@@ -86,5 +86,3 @@ being dismissed early.
 
 He walked home alone, the sun-drenched streets feeling like a foreign landscape. To the groups of laughing students
 around him, he was just another face in the crowd, a stranger in a world that moved too fast for him to care.
-
----

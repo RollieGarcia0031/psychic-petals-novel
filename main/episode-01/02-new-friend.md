@@ -197,3 +197,5 @@ His father nodded once and continued eating in silence. Damien watched him for a
 his mother, who gave him a small, encouraging smile. In the quiet of the house, surrounded by the unspoken
 words and the weight of his father's expectations, Damien felt the strange, conflicting pull of his two
 worlds—the one where he was a son, and the one where he was something else entirely.
+
+---
