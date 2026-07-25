@@ -23,8 +23,8 @@ The novel is organized chronologically. To read the story properly:
 ```
 ├── main/               # THE STORY: Finalized prose (Start here!)
 │   └── episode-01/
-│       └── chapter-01/
-│           └── 01-the-classroom-intro.md
+│       ├── 01-the-classroom-intro.md
+│       └── 02-new-friend.md
 ├── outlines/           # THE PLAN: Mirrored structure for beat sheets
 │   └── episode-01/
 │       ├── episode-01.md
