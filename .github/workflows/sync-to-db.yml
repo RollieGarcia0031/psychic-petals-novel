@@ -53,9 +53,25 @@ jobs:
           CHANGED=$(printf '%s' "$CHANGED" | paste -sd, -)
           echo "files=$CHANGED" >> "$GITHUB_OUTPUT"
 
+      - name: Find deleted chapter files
+        id: deleted
+        working-directory: novel
+        env:
+          BEFORE: ${{ github.event.before }}
+          SHA: ${{ github.sha }}
+        run: |
+          if [ "$BEFORE" = '0000000000000000000000000000000000000000' ] || ! git cat-file -e "$BEFORE^{commit}" 2>/dev/null; then
+            DELETED=""
+          else
+            DELETED=$(git diff --diff-filter=D --name-only "$BEFORE" "$SHA" -- 'main/**/*.md')
+          fi
+          DELETED=$(printf '%s' "$DELETED" | paste -sd, -)
+          echo "files=$DELETED" >> "$GITHUB_OUTPUT"
+
       - name: Sync changed chapters to Firestore
         working-directory: platform/backend
         env:
           FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
           CHANGED_FILES: ${{ steps.changed.outputs.files }}
-        run: node scripts/sync-novel.js --novel-dir ../../novel --changed "$CHANGED_FILES"
+          DELETED_FILES: ${{ steps.deleted.outputs.files }}
+        run: node scripts/sync-novel.js --novel-dir ../../novel --changed "$CHANGED_FILES" --deleted "$DELETED_FILES"
