@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
+PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
+OUTPUT="$PROJECT_ROOT/compiled.md"
+
+# Start fresh
+> "$OUTPUT"
+
+# Process each episode directory in sorted order
+for episode_dir in $(find "$PROJECT_ROOT/main" -mindepth 1 -maxdepth 1 -type d | sort); do
+    episode_name="$(basename "$episode_dir")"
+
+    # Add episode header
+    echo "# ${episode_name}" >> "$OUTPUT"
+    echo "" >> "$OUTPUT"
+
+    # Process each chapter file in sorted order
+    for chapter_file in $(find "$episode_dir" -maxdepth 1 -name "*.md" -type f | sort); do
+        # Skip the compiled output itself
+        [[ "$(realpath "$chapter_file")" == "$(realpath "$OUTPUT")" ]] && continue
+
+        cat "$chapter_file" >> "$OUTPUT"
+        echo "" >> "$OUTPUT"
+        echo "---" >> "$OUTPUT"
+        echo "" >> "$OUTPUT"
+    done
+done
+
+echo "Compiled to $OUTPUT"
