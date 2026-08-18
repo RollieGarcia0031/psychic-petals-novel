@@ -1,239 +1,197 @@
-# <center> Chapter 2: </center>
+# Chapter 2: Home
 
-The word was already on the chalkboard when Damien entered the classroom.
+The classroom was quiet except for the sound of pens moving across paper.
 
-**HOME**
+Sir Kent had given them an essay.
 
-Sir Marco had written it in large, uneven letters with a piece of chalk that had broken twice before the word
-was finished.
+The topic was simple: What does home mean to you?
 
-"Twenty minutes," he said.
+Damien stared at his paper.
 
-The class groaned.
+He didn't know what to write.
 
-"Essay."
+He could write about the kitchen.
 
-That made it worse.
+His mother's cooking.
 
-Sir Marco leaned against his desk and folded his arms.
+His father's chair at the head of the table.
 
-"Write about what home means to you."
+He could write about the house itself.
 
-Pens began moving.
+But none of those things felt like an answer.
 
-Damien looked at his paper.
+Instead, he remembered something from an old television drama. He had watched it late at night when he couldn't
+sleep. The actors had talked about home as if it were something warm and easy to understand.
 
-The lines were blue.
-
-They ran across the page from one edge to the other, perfectly straight, leaving nowhere for anything to hide.
-
-He could have written about the kitchen.
-
-The old table.
-
-His mother's soup.
-
-His father's shoes beside the door.
-
-He could have written about the way his mother sometimes spoke to him without moving her lips, or how his father
-could make the whole house quieter simply by sitting down.
-
-Instead, he remembered things from television.
-
-Old dramas.
-
-Cheap costumes.
-
-Actors standing beneath badly painted sunsets and saying things that sounded important because there was music
-playing behind them.
+He borrowed their words.
 
 His pen moved.
 
-*It is strange why house and home are supposed to have different meanings.*
+It is strange why house and home are supposed to have different meanings.
 
-He stopped.
+He paused.
 
-Then continued.
+Then he continued.
 
-*Home wasn't meant to be a place. It's about the feeling that we know the people around us also care about us.*
+Home wasn't meant to be a place. It's about the feeling that we know the people around us also care about us.
 
-The classroom fan clicked overhead.
+His pen stopped again.
 
-Damien wrote the last sentence.
+He looked at the sentence.
 
-*But still, how can we consider it home if it's a place where we have no air to breathe despite having our loved
-ones around us?*
+Then he wrote the rest.
 
-He put the pen down.
+But still, how can we consider it home if it's a place where we have no air to breathe despite having our loved
+ones around us?
 
-The sentence remained there.
+Damien put his pen down.
 
-He did not read it again.
+He read the essay once.
 
-"Finished already?"
+Then he stood.
 
-Sir Marco was looking at him.
+Sir Kent looked up.
 
-Damien stood and brought the paper to the front.
+"Finished already, Damien?"
 
-Sir Marco read it.
+Damien walked to the front.
+
+"Yes, Sir."
+
+He handed over the paper.
+
+Sir Kent read it.
 
 His eyebrows rose.
 
-He read the last paragraph again.
+He looked at Damien.
 
-"That's..." He looked at Damien. "Quite something."
+"That's it?"
 
-Damien waited.
+"Yes, Sir."
 
-Sir Marco turned toward the class.
+"You finished in less than ten minutes."
 
-"If Damien has managed to finish his essay in less than ten minutes, I see no reason for the rest of you to need
-twenty."
+Damien nodded.
 
-The room went silent.
+Sir Kent looked around the classroom.
 
-Someone whispered, "Sir, don't."
+"Alright, everyone. If Damien can finish this quickly, you have ten seconds to pass your papers."
 
-Sir Marco smiled.
+The classroom went silent.
 
-"You have ten seconds."
+Someone near the back said, "Sir, what?"
 
-The classroom exploded.
-
-Chairs scraped against the floor. Papers flew. Pens rolled beneath desks. Someone shouted that ten seconds was
-not enough.
-
-Sir Marco began counting.
+Sir Kent raised his hand.
 
 "Ten."
 
-Damien turned.
+Students immediately started scrambling.
 
 "Nine."
 
-Students were already running toward the front.
+Chairs scraped against the floor.
 
 "Eight."
 
-He saw Dahlia.
+Papers flew through the air.
 
-She was trying to stand.
+Damien turned toward his seat.
 
-Her skirt had caught on the metal frame beneath her desk.
-
-She pulled once.
-
-Nothing.
-
-Again.
-
-Still nothing.
-
-"Seven."
-
-She looked at Damien.
-
-Not frightened.
-
-Amused.
+Then he heard someone call him.
 
 "Damie-Damie-Damien!"
 
+He looked back.
+
+Dahlia was stuck.
+
+The edge of her skirt had caught on the metal frame beneath her chair.
+
+She held her essay out toward him.
+
+"Take this!"
+
 Damien walked over.
 
-"Six."
+He took the paper from her.
 
-She held out her paper.
+"Thanks!"
 
-"Take this."
+"Seven!"
 
-He took it.
+Students were rushing toward the front.
+
+"Six!"
+
+Damien looked at the crowd.
+
+There was no way everyone would reach Sir Kent's desk in time.
+
+He sighed.
+
+Then he opened his hand.
+
+The air around him shimmered.
+
+Thin, pearlescent folders appeared above the desks.
+
+One folder caught a paper.
+
+Another caught a second.
+
+Then another.
+
+Within seconds, the folders moved through the classroom.
+
+They gathered every essay.
+
+They passed over desks and between students.
+
+Then they settled into a neat stack on Sir Kent's desk.
 
 "Five."
 
-The room smelled of chalk dust, sweat, and the faint sweetness of somebody's unopened lunch.
+Sir Kent stopped counting.
 
-"Four."
+He stared at the papers.
 
-Damien looked toward the front.
+Damien walked to the front.
 
-The aisle was full.
+He placed Dahlia's essay on top.
 
-There was no time.
+Sir Kent looked at the stack.
 
-He opened his hand.
+Then he looked at Damien.
 
-The air above the desks became pale.
-
-Thirty folders appeared.
-
-They were translucent, the color of milk poured into a glass, and each one opened with a soft wooden click before
-closing around a sheet of paper.
-
-One after another, the folders moved.
-
-They passed between shoulders.
-
-Over heads.
-
-Across the classroom.
-
-Every loose page found its way to Sir Marco's desk.
-
-"Three."
-
-Nobody moved.
-
-"Two."
-
-The folders settled into a neat stack.
-
-"One."
-
-Damien placed Dahlia's paper on top.
-
-The last folder disappeared.
-
-Sir Marco looked at the stack.
-
-Then at Damien.
-
-Damien returned to his seat.
-
-Dahlia finally freed her skirt.
-
-She sat down.
-
-She looked at him.
-
-There was a smile at the corner of her mouth.
-
-Damien opened his drawing pad.
-
-He drew a road.
+The folders disappeared.
 
 Nobody said anything.
 
----
+Dahlia finally freed her skirt.
 
-After the last bell, Damien left through the back gate.
+She looked at Damien.
 
-The sun had dried the rain from the previous night, leaving the concrete hot enough to sting through the soles of
-his shoes.
+She smiled.
 
-He walked toward the construction site behind the school.
+Damien returned to his seat.
 
-The place was unfinished and mostly abandoned during the afternoon. Concrete pillars stood where rooms would eventually
-be. Rusted rebar reached from the upper floors. Cement bags had hardened into pale lumps beneath torn plastic.
+He opened his drawing pad.
+
+He began drawing a road.
+
+After school, Damien went to the unfinished construction site near the school.
 
 It was quiet there.
 
-Quiet enough.
+Concrete pillars stood around the empty building. Rusted steel bars stuck out of the floor. Old cement bags sat
+beneath a piece of torn plastic.
 
-Damien stepped behind one of the pillars.
+Damien walked behind one of the pillars.
 
-Three people were sitting on cement bags.
+Then he stopped.
+
+Three students were sitting on cement bags.
 
 Joan.
 
@@ -243,440 +201,452 @@ Mateo.
 
 They were eating corn chips.
 
-Joan stopped chewing.
+Joan looked at him.
 
-Elena lowered the bag.
-
-Mateo stared.
-
-Nobody spoke for several seconds.
-
-Then Joan grinned.
+Then she smiled.
 
 "We know who you are."
 
-Damien looked at them.
+Damien stared at her.
 
 "Okay."
 
-Elena tilted her head.
+Elena leaned forward.
 
-"What kind of water do you drink?"
-
-Damien blinked.
-
-"What?"
-
-"How did you get those powers?"
-
-The wind pushed a sheet of plastic against a fence.
-
-It snapped twice.
-
-Damien adjusted his bag.
-
-"Fuck you."
-
-Joan choked on a corn chip.
-
-Elena covered her mouth.
-
-Mateo stared at Damien with the delighted expression of someone who had just discovered that a quiet person was
-capable of swearing.
-
-Joan laughed.
-
-"I like him."
+"What kind of water do you drink at home?"
 
 Damien frowned.
 
-"I don't."
+"What?"
 
-"Too late."
+Elena pointed at him.
+
+"How did you get those powers?"
+
+Damien adjusted his bag.
+
+"Fuck you. That's none of your business."
+
+Joan almost choked on her chips.
+
+Then she laughed.
+
+"Whoa."
+
+Damien looked at her.
+
+"What?"
+
+Joan wiped her mouth.
+
+"I didn't expect that from you."
+
+"What did you expect?"
+
+"I thought you were shy."
+
+Damien shrugged.
+
+"Maybe I am."
+
+Joan stood.
+
+"I like this dude."
+
+She pointed at him.
+
+"You're part of our group now."
+
+Damien frowned.
 
 "What?"
 
 "You're our friend now."
 
-"That isn't how friendship works."
-
-"It is now."
+"That's not how friendship works."
 
 Mateo jumped down from the cement bags.
 
-"We'll call you Niemad."
+"Sure it is."
 
-Damien stared at him.
+Damien looked at him.
 
-"And you can call me Oetam."
+"Who are you?"
 
-"Those are just our names backward."
+"I'm Mateo."
+
+Mateo pointed at Damien.
+
+"And you're Niemad."
+
+Damien stared.
+
+"What?"
+
+"Niemad."
+
+"That's just my name backward."
 
 "Exactly."
 
-"Why?"
+Mateo grinned.
 
-Mateo shrugged.
+"It's cool."
 
-"Because it's funny."
+Damien looked at Joan.
 
-Damien looked at Elena.
+"Do you agree with this?"
 
-She shrugged.
-
-Joan was already eating again.
-
-He looked at the three of them.
-
-Then toward the road.
-
-Then back.
-
-"You people are strange."
-
-"Thanks."
-
-"I didn't mean that as a compliment."
-
-"We'll take it anyway."
-
-Damien sighed.
-
-He stepped past them.
-
-"Where are you going?" Joan asked.
-
-"Hungry."
-
-"There's food."
-
-"My mother packed lunch."
-
-"It's after school."
-
-"I know."
-
-He walked behind the concrete wall.
-
-His feet lifted from the dust.
-
-Then he was gone.
-
-Joan stood.
-
-"Did he just fly away?"
-
-Mateo nodded.
+Joan nodded.
 
 "Yep."
 
-Elena ate another chip.
+Damien looked at Elena.
+
+"You too?"
+
+Elena shrugged.
+
+"Sure."
+
+Damien sighed.
+
+"You guys are insane."
+
+Joan smiled.
+
+"Thanks."
+
+Damien turned away.
+
+"I'm hungry."
+
+He walked toward the open side of the building.
+
+Joan called after him.
+
+"Where are you going?"
+
+"Home."
+
+"You're not going to fly?"
+
+Damien looked back.
+
+"No."
+
+Then he rose from the ground.
+
+Joan's eyes widened.
+
+He floated over the wall and disappeared toward the trees.
+
+There was a moment of silence.
+
+Mateo looked at Joan.
 
 "He's weird."
 
 Joan smiled.
 
-"He's perfect."
+"Yeah."
 
----
+The next morning, Damien found Mateo and Elena sitting behind him.
 
-By the next morning, Damien's seat was no longer his.
+He stopped beside his desk.
 
-Mateo and Elena had moved their desks behind him.
+"Why are you here?"
 
-They talked during every class.
+Mateo smiled.
 
-Not loudly.
+"We moved."
 
-That was the problem.
+"Why?"
 
-They whispered.
+"We wanted to sit here."
 
-They laughed into their hands.
+Damien looked at Elena.
 
-They passed folded pieces of paper over his shoulder.
+"Why?"
 
-Someone had drawn a picture of Sir Marco with an enormous nose.
+Elena shrugged.
 
-Damien ignored it.
+"It's fun."
+
+Damien sat down.
+
+He opened his notebook.
+
+Behind him, they started whispering.
+
+They passed notes.
+
+They laughed.
+
+Damien ignored them.
 
 For two periods.
 
-During literature, Elena leaned forward again.
-
-"Damien."
-
-He kept writing.
-
-"Damien."
-
-Nothing.
-
-"Damien."
-
-He turned.
-
-She smiled.
+During literature class, he finally turned around.
 
 He raised one finger to his lips.
 
-Silence.
+"Quiet."
+
+Elena smiled.
 
 She nodded.
 
-For approximately three seconds.
+Then she reached forward.
 
-Then she reached forward and took a lock of his hair between her fingers.
+She took a lock of Damien's hair.
+
+She began twirling it around her finger.
 
 Damien stared at her.
 
-She twirled it.
+"Seriously?"
 
-He waited.
+Elena smiled.
 
-She continued.
+"Your hair is soft."
 
-He turned back toward the board.
+Damien turned back toward the board.
 
-There were some battles that were not worth fighting.
+He gave up.
 
-At lunch, Ben appeared beside his desk.
+At lunch, Ben leaned over his desk.
 
-"Come on."
+"Hey, Damien."
+
+Damien looked at him.
+
+"What?"
+
+"Come with us."
 
 "Where?"
 
 "Joan's house."
 
+"Why?"
+
+"We're eating there."
+
 Damien looked at his lunchbox.
+
+"I have food."
+
+Ben shrugged.
+
+"Bring it."
+
+Damien looked at him.
 
 "Why?"
 
-"Because we're eating there."
+"Because we're friends."
 
-"Who decided?"
-
-"Joan."
-
-"Did I agree?"
-
-"No."
-
-Damien packed his lunch.
+Damien stared at him.
 
 Ben smiled.
 
-"Great. Let's go."
+Damien sighed.
 
-They walked four blocks.
+"Fine."
 
-Joan's house was small, with faded green paint and a rusted roof that clicked whenever the wind moved across
-it. The living room contained two plastic chairs, a wooden cabinet, and a ceiling fan that rotated slowly enough
-to make everyone wonder whether it was actually helping.
+They walked several blocks to Joan's house.
+
+It was a small house with faded green paint and a rusted tin roof.
+
+Inside, a ceiling fan squeaked as it turned.
 
 Ben looked around.
 
 "Where is everybody?"
 
-"Parents are working," Joan said.
+Joan dropped her bag onto a plastic chair.
 
-"And your sister?"
+"My parents are at work."
 
-"School."
+She pointed toward the hallway.
 
-"So we're alone."
+"My sister's at school."
 
-Joan opened the kitchen door.
+Ben nodded.
 
-"We're not alone."
+"So we're alone?"
 
-She pointed toward Damien.
+Joan smiled.
 
-"He's here."
+"Yep."
 
-Damien looked at her.
+Damien sat on a wooden stool.
 
-"That's not what I meant."
+He looked around the house.
 
-"I know."
+Joan went into the kitchen.
 
-They sat around the kitchen table.
+"We have rice."
 
-Joan brought out plates.
+She looked at Damien.
 
-Mateo found the rice.
+"You want some?"
 
-Elena took the serving spoon.
+Damien opened his lunchbox.
 
-Damien opened the metal container his mother had packed that morning.
+"I'm okay."
 
-Joan held out a plate.
+Joan brought plates for the others.
 
-"You sure?"
+They sat around the small kitchen table.
 
-"I'm fine."
+Mateo served himself.
 
-He took a bite.
+He put a huge pile of rice on his plate.
 
-Mateo served himself a pile of rice large enough to require structural support.
-
-Damien looked at the plate.
+Damien looked at him.
 
 "Damn."
 
-Mateo stopped.
+Mateo looked up.
 
 "What?"
 
-"You look sincerely hungry."
+"You look hungry."
 
-Mateo smiled.
+Mateo grinned.
 
-"So are you."
+"So do you."
 
-Damien looked at his food.
+Damien raised an eyebrow.
 
 "Not for food?"
 
-Mateo nodded.
+Mateo laughed.
 
-Damien took another bite.
+"Exactly."
+
+Elena laughed too.
+
+Damien shook his head.
 
 "Poetic."
 
-Ben laughed.
+They ate for a while.
 
-The others followed.
-
-For a while, there was only the sound of spoons against plates and the ceiling fan complaining above them.
-
-Then Joan leaned forward.
+Then Mateo looked at Damien.
 
 "So."
 
-Damien kept eating.
-
-"We heard things."
-
-"About?"
-
-"You."
-
 Damien looked up.
 
-Joan's expression had lost some of its joking edge.
+"What?"
+
+"Can we ask about your powers?"
+
+Damien took another bite.
+
+"Sure."
+
+Joan leaned forward.
+
+"We heard some stories about you."
+
+Damien stopped eating.
+
+"What stories?"
+
+Joan looked at him.
 
 "People said you used to get paid to beat people up."
 
-Damien chewed.
+Damien shrugged.
 
 "Yeah?"
 
 "Is it true?"
 
-He swallowed.
-
 "Maybe."
 
-"Why'd you stop?"
+Joan watched him.
+
+"Why did you stop?"
 
 Damien put his fork down.
 
-The metal touched the table.
+"Who said I stopped?"
 
-Quietly.
-
-"Who told you I stopped?"
-
-Nobody answered.
+The table became quiet.
 
 Damien opened both hands.
 
-Something cold gathered in the air.
+Something appeared above his palms.
 
-A knife appeared in his right hand.
+A knife formed in his right hand.
 
-A pipe wrench appeared in his left.
+A heavy pipe wrench formed in his left.
 
-The knife rested against his palm with the ordinary weight of steel.
+Mateo's chair moved backward.
 
-Mateo's chair scraped backward.
+Elena stared.
 
-Elena's eyes widened.
+Damien's eyes began to glow violet.
 
-Ben stared.
+He raised the knife.
 
-Damien looked at all four of them.
+Then he spoke in a deep, dramatic voice.
 
-His eyes began to glow violet.
+"SOON, I WILL TAKE OVER THIS WORLD!"
 
-His voice dropped into something much deeper than his own.
+Elena immediately raised both hands.
 
-"SOON, I WILL TAKE OVER THIS WORLD."
+"Oh, fuck. Don't!"
 
-Elena raised both hands.
+Damien lowered his hands.
 
-"Oh, fuck, don't!"
+The knife and wrench dissolved into pearlescent dust.
 
-Damien held the pose for another second.
+The dust vanished before it reached the table.
 
-Then he laughed.
-
-The knife disappeared.
-
-The wrench disappeared.
-
-Both became pale dust and fell through his fingers without touching the table.
+Damien smiled.
 
 "Damn."
 
-He rubbed his forehead.
+Ben stared at him.
+
+Damien leaned back.
 
 "I always wanted to play a villain in a movie."
 
-There was a moment of silence.
+Mateo burst out laughing.
 
-Then Mateo started laughing.
+His spoon fell from his hand.
 
-He laughed so hard that his spoon slipped from his hand.
+Joan started laughing too.
 
-Joan followed.
+Elena covered her face.
 
-Elena folded over the table.
+Even Ben laughed.
 
-Even Ben was laughing.
+Damien picked up his fork.
 
-Damien looked at them.
+He took another bite of his lunch.
 
-He picked up his fork.
+He looked around the table.
 
-His food had gone cold.
+They were loud.
 
-He took another bite anyway.
+They were annoying.
 
-The rice was still good.
+They had known him for barely a day.
 
-Across the table, Joan was wiping tears from her eyes.
+And somehow, he didn't want to leave.
 
-"You're really weird, Niemad."
+Damien looked down at his food.
 
-Damien chewed.
+I shouldn't have rushed that essay.
 
-"Don't call me that."
+He smiled to himself.
 
-"Okay, Niemad."
-
-He looked at her.
-
-She grinned.
-
-Damien looked down at his lunch.
-
-For the first time that day, he didn't mind being there.
-
-He had finished the essay too quickly.
-
-He knew that now.
-
-There were worse mistakes.
-
+For once, being around people didn't feel like work.
