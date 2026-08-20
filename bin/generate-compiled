@@ -3,29 +3,102 @@ set -euo pipefail
 
 SCRIPT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 PROJECT_ROOT="$(dirname "$SCRIPT_DIR")"
-OUTPUT="$PROJECT_ROOT/compiled.md"
 
-# Start fresh
-> "$OUTPUT"
+usage() {
+    echo "Usage: $(basename "$0") [OPTIONS]"
+    echo ""
+    echo "Options:"
+    echo "  --all           Compile all directories to compiled.all.md"
+    echo "  --main          Compile main/ to compiled.main.md"
+    echo "  --outlines      Compile outlines/ to compiled.outlines.md"
+    echo "  --story-bible   Compile story-bible/ to compiled.story-bible.md"
+    echo ""
+    echo "With no arguments, compiles main/ to compiled.md (legacy behavior)."
+}
 
-# Process each episode directory in sorted order
-for episode_dir in $(find "$PROJECT_ROOT/main" -mindepth 1 -maxdepth 1 -type d | sort); do
-    episode_name="$(basename "$episode_dir")"
+# Compile main directory (episode/chapter structure)
+compile_main() {
+    local src_dir="$1"
+    local output_file="$2"
 
-    # Add episode header
-    echo "# ${episode_name}" >> "$OUTPUT"
-    echo "" >> "$OUTPUT"
+    > "$output_file"
 
-    # Process each chapter file in sorted order
-    for chapter_file in $(find "$episode_dir" -maxdepth 1 -name "*.md" -type f | sort); do
-        # Skip the compiled output itself
-        [[ "$(realpath "$chapter_file")" == "$(realpath "$OUTPUT")" ]] && continue
+    for episode_dir in $(find "$src_dir" -mindepth 1 -maxdepth 1 -type d | sort); do
+        episode_name="$(basename "$episode_dir")"
 
-        cat "$chapter_file" >> "$OUTPUT"
-        echo "" >> "$OUTPUT"
-        echo "---" >> "$OUTPUT"
-        echo "" >> "$OUTPUT"
+        echo "# ${episode_name}" >> "$output_file"
+        echo "" >> "$output_file"
+
+        for chapter_file in $(find "$episode_dir" -maxdepth 1 -name "*.md" -type f | sort); do
+            cat "$chapter_file" >> "$output_file"
+            echo "" >> "$output_file"
+            echo "---" >> "$output_file"
+            echo "" >> "$output_file"
+        done
     done
-done
 
-echo "Compiled to $OUTPUT"
+    echo "Compiled to $output_file"
+}
+
+# Compile directory recursively (for outlines, story-bible)
+compile_recursive() {
+    local src_dir="$1"
+    local output_file="$2"
+    local append="${3:-false}"
+
+    if [[ ! -d "$src_dir" ]]; then
+        echo "Warning: Directory $src_dir does not exist, skipping."
+        return
+    fi
+
+    if [[ "$append" == "false" ]]; then
+        > "$output_file"
+    fi
+
+    for md_file in $(find "$src_dir" -name "*.md" -type f | sort); do
+        cat "$md_file" >> "$output_file"
+        echo "" >> "$output_file"
+        echo "---" >> "$output_file"
+        echo "" >> "$output_file"
+    done
+
+    echo "Compiled to $output_file"
+}
+
+# Parse arguments
+if [[ $# -eq 0 ]]; then
+    compile_main "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.md"
+    exit 0
+fi
+
+while [[ $# -gt 0 ]]; do
+    case "$1" in
+        --all)
+            compile_main "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.all.md"
+            compile_recursive "$PROJECT_ROOT/outlines" "$PROJECT_ROOT/compiled.all.md" true
+            compile_recursive "$PROJECT_ROOT/story-bible" "$PROJECT_ROOT/compiled.all.md" true
+            shift
+            ;;
+        --main)
+            compile_main "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.main.md"
+            shift
+            ;;
+        --outlines)
+            compile_recursive "$PROJECT_ROOT/outlines" "$PROJECT_ROOT/compiled.outlines.md"
+            shift
+            ;;
+        --story-bible)
+            compile_recursive "$PROJECT_ROOT/story-bible" "$PROJECT_ROOT/compiled.story-bible.md"
+            shift
+            ;;
+        -h|--help)
+            usage
+            exit 0
+            ;;
+        *)
+            echo "Unknown option: $1"
+            usage
+            exit 1
+            ;;
+    esac
+done
