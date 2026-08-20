@@ -351,6 +351,10 @@ Joan smiled.
 
 "Yeah."
 
+Damien flew over the rooftops.
+
+*They saw the powers. That's the only reason they're talking to me. Everyone always wants something.*
+
 The next morning, Damien found Mateo and Elena sitting behind him.
 
 He stopped beside his desk.
@@ -410,6 +414,12 @@ Damien stared at her.
 Elena smiled.
 
 "Your hair is soft."
+
+"Do you use conditioner?"
+
+Damien shook his head once, no.
+
+"I wish I had hair soft as these."
 
 Damien turned back toward the board.
 
