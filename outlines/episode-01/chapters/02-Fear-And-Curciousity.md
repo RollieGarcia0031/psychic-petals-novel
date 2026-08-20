@@ -82,11 +82,20 @@
             Dmaien: I'm getting hungry, whatever (flies away towards home).
             Joan: Ben, your friend is sure weird, good additional for stupid people like us HAHAHAHHAHAH.
         ```
+    - Damien's innder dialog as he flew towards his home:
+        ```
+            They probably saw my powers, everyone's litterally act the same whenever they see it.
+        ```
 * **Next day meeting friends:**
     - Mateo and Elena sat behind Damien's seat (front row, near window)
     - During class, Mateo and  Elena behind Damien are gossiping random stuff.
     - Damien gets annoyed, he looks behind him and calmly signals them to shut up.
     - Elena plays with Damien's hair, and he decided to let her play.
+        ```
+            Elena: Do you conditioner?
+            Damien: *nods as response no
+            Elena: I wished I have hair soft as these one.
+        ```
 * **Lunch Break:**
     - During lunch breack, Ben decided to ask Damien to join them to eat lunch at Joans house.
     - They went to Joan's house, it wasn't big or fancy.
