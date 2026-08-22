@@ -13,7 +13,7 @@
 
 ## 📖 How to Read
 The novel is organized chronologically. To read the story properly:
-1. Navigate to the `main/` directory.
+1. Navigate to the `main/en/` directory for English (`main/tl/` for the Tagalog version).
 2. Follow the episodes and chapters in numerical order.
 3. Read the scene files (e.g., `01-...`, `02-...`) sequentially.
 
@@ -22,20 +22,32 @@ The novel is organized chronologically. To read the story properly:
 ## 🛠 File Structure
 ```
 ├── main/               # THE STORY: Finalized prose (Start here!)
-│   └── episode-01/
-│       ├── 01-the-classroom-intro.md
-│       └── 02-new-friend.md
+│   ├── en/             # English prose
+│   │   └── episode-01/
+│   │       ├── 01-unlabeled-maps.md
+│   │       └── 02-home.md
+│   └── tl/             # Tagalog prose (translated chapter by chapter)
+│       └── episode-01/
+│           ├── 01-mga-mapang-di-pinalagyan.md
+│           └── 02-tahanan.md
 ├── outlines/           # THE PLAN: Mirrored structure for beat sheets
-│   └── episode-01/
-│       ├── episode-01.md
-│       └── chapter-01/
-│           ├── chapter-01.md
-│           └── 01-the-classroom-intro.md
+│   └── episode-01/
+│       ├── episode-01.md
+│       └── chapter-01/
+│           ├── chapter-01.md
+│           └── 01-the-classroom-intro.md
 └── story-bible/        # THE LORE: Character profiles and world mechanics
     ├── characters/     # Individual profiles (e.g., damien.md)
     ├── lore/           # Systems, history, and biology
     └── settings/       # Locations and regional data
 ```
+
+Both languages share the same episode/chapter numbering — chapter N in
+`main/en/` corresponds to chapter N in `main/tl/`. The `outlines/` and
+`story-bible/` directories are English-only and serve both versions.
+Chapter files carry YAML frontmatter (`title`, `episode`, `chapter`,
+`status`, `translationOf`) so each language syncs to its own Firestore
+document (`psychic_petals` / `psychic_petals_tl`).
 
 ---
 

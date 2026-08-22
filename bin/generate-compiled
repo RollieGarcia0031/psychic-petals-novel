@@ -9,11 +9,49 @@ usage() {
     echo ""
     echo "Options:"
     echo "  --all           Compile all directories to compiled.all.md"
-    echo "  --main          Compile main/ to compiled.main.md"
+    echo "  --main          Compile main/ per language dir (compiled.main.en.md,"
+    echo "                  compiled.main.tl.md, ...) or compiled.main.md for the"
+    echo "                  legacy layout without language dirs"
     echo "  --outlines      Compile outlines/ to compiled.outlines.md"
     echo "  --story-bible   Compile story-bible/ to compiled.story-bible.md"
     echo ""
-    echo "With no arguments, compiles main/ to compiled.md (legacy behavior)."
+    echo "With no arguments, compiles each language under main/ to its own file"
+    echo "(compiled.main.en.md, compiled.main.tl.md, ...); legacy layouts compile"
+    echo "main/ to compiled.md."
+}
+
+# Detect per-language subdirectories directly under main/ (e.g. main/en,
+# main/tl). Two-letter lowercase directory names mark the bilingual layout.
+detect_language_dirs() {
+    local main_dir="$1"
+    local dir lang
+    for dir in "$main_dir"/*/; do
+        [[ -d "$dir" ]] || continue
+        lang="$(basename "$dir")"
+        if [[ "$lang" =~ ^[a-z]{2}$ ]]; then
+            printf '%s\n' "${dir%/}"
+        fi
+    done
+}
+
+# Compile every language directory under main/ into its own output file:
+# main/en -> compiled.main.en.md, main/tl -> compiled.main.tl.md, ...
+# Returns 1 when no language directories exist (legacy layout).
+compile_main_languages() {
+    local main_dir="$1"
+    local out_prefix="$2"
+    local lang_dirs
+    lang_dirs="$(detect_language_dirs "$main_dir")"
+
+    if [[ -z "$lang_dirs" ]]; then
+        return 1
+    fi
+
+    local lang_dir lang
+    while IFS= read -r lang_dir; do
+        lang="$(basename "$lang_dir")"
+        compile_main "$lang_dir" "${out_prefix}.${lang}.md"
+    done <<< "$lang_dirs"
 }
 
 # Compile main directory (episode/chapter structure)
@@ -67,20 +105,27 @@ compile_recursive() {
 
 # Parse arguments
 if [[ $# -eq 0 ]]; then
-    compile_main "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.md"
+    compile_main_languages "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.main" || \
+        compile_main "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.md"
     exit 0
 fi
 
 while [[ $# -gt 0 ]]; do
     case "$1" in
         --all)
-            compile_main "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.all.md"
+            if ! compile_main_languages "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.main"; then
+                compile_main "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.all.md"
+            else
+                cat "$PROJECT_ROOT"/compiled.main.*.md > "$PROJECT_ROOT/compiled.all.md"
+                echo "Compiled to $PROJECT_ROOT/compiled.all.md"
+            fi
             compile_recursive "$PROJECT_ROOT/outlines" "$PROJECT_ROOT/compiled.all.md" true
             compile_recursive "$PROJECT_ROOT/story-bible" "$PROJECT_ROOT/compiled.all.md" true
             shift
             ;;
         --main)
-            compile_main "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.main.md"
+            compile_main_languages "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.main" || \
+                compile_main "$PROJECT_ROOT/main" "$PROJECT_ROOT/compiled.main.md"
             shift
             ;;
         --outlines)
