@@ -68,10 +68,64 @@ jobs:
           DELETED=$(printf '%s' "$DELETED" | paste -sd, -)
           echo "files=$DELETED" >> "$GITHUB_OUTPUT"
 
-      - name: Sync changed chapters to Firestore
-        working-directory: platform/backend
+      - name: Split chapter files by language
+        id: split
+        working-directory: novel
         env:
-          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
           CHANGED_FILES: ${{ steps.changed.outputs.files }}
           DELETED_FILES: ${{ steps.deleted.outputs.files }}
+        run: |
+          # Bucket paths the same way the backend's parseChapterPath/
+          # resolveNovelId route them: main/<lang>/... targets
+          # novels/psychic_petals_<lang> (en targets the base novel), while
+          # legacy bare paths (main/episode-NN/...) belong to the base English
+          # novel. Each group is synced independently below so one language
+          # failing or being empty never blocks the others.
+          split_list() {
+            local target="$1" list="$2"
+            printf '%s' "$list" | tr ',' '\n' | awk -v target="$target" '
+              $0 == "" { next }
+              {
+                if ($0 ~ /^main\/[a-z][a-z]\//) {
+                  lang = substr($0, 6, 2)
+                  if (lang == target || (target == "other" && lang != "en" && lang != "tl"))
+                    print
+                } else if (target == "en") {
+                  print
+                }
+              }
+            ' | paste -sd, -
+          }
+          echo "changed_en=$(split_list en "$CHANGED_FILES")" >> "$GITHUB_OUTPUT"
+          echo "changed_tl=$(split_list tl "$CHANGED_FILES")" >> "$GITHUB_OUTPUT"
+          echo "changed_other=$(split_list other "$CHANGED_FILES")" >> "$GITHUB_OUTPUT"
+          echo "deleted_en=$(split_list en "$DELETED_FILES")" >> "$GITHUB_OUTPUT"
+          echo "deleted_tl=$(split_list tl "$DELETED_FILES")" >> "$GITHUB_OUTPUT"
+          echo "deleted_other=$(split_list other "$DELETED_FILES")" >> "$GITHUB_OUTPUT"
+
+      - name: Sync English chapters to Firestore
+        working-directory: platform/backend
+        if: ${{ steps.split.outputs.changed_en != '' || steps.split.outputs.deleted_en != '' }}
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          CHANGED_FILES: ${{ steps.split.outputs.changed_en }}
+          DELETED_FILES: ${{ steps.split.outputs.deleted_en }}
+        run: node scripts/sync-novel.js --novel-dir ../../novel --changed "$CHANGED_FILES" --deleted "$DELETED_FILES"
+
+      - name: Sync Tagalog chapters to Firestore
+        working-directory: platform/backend
+        if: ${{ steps.split.outputs.changed_tl != '' || steps.split.outputs.deleted_tl != '' }}
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          CHANGED_FILES: ${{ steps.split.outputs.changed_tl }}
+          DELETED_FILES: ${{ steps.split.outputs.deleted_tl }}
+        run: node scripts/sync-novel.js --novel-dir ../../novel --changed "$CHANGED_FILES" --deleted "$DELETED_FILES"
+
+      - name: Sync other language chapters to Firestore
+        working-directory: platform/backend
+        if: ${{ steps.split.outputs.changed_other != '' || steps.split.outputs.deleted_other != '' }}
+        env:
+          FIREBASE_SERVICE_ACCOUNT_KEY: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_KEY }}
+          CHANGED_FILES: ${{ steps.split.outputs.changed_other }}
+          DELETED_FILES: ${{ steps.split.outputs.deleted_other }}
         run: node scripts/sync-novel.js --novel-dir ../../novel --changed "$CHANGED_FILES" --deleted "$DELETED_FILES"
